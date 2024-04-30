@@ -6,6 +6,7 @@ import './page.css';
 function Page() {
   return (
     <div>
+      <div>+</div>
       <TodoListTitle />
       <TodoListInput />
       <TodoListOutput />
