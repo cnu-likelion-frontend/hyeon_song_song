@@ -1,9 +1,7 @@
-import './Page.css';
+import "./Page.css";
 
 function Page() {
-  return (
-    <div></div>
-  );
+  return <div className="Page"></div>;
 }
 
 export default Page;
