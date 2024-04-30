@@ -1,10 +1,10 @@
 function TodoListTitle() {
     return (
-        <>
-            <p>T O D O</p>
+        <div>
+            <p>TODO</p>
             <img src="./images/icon-sun.svg"></img>
-        </>
-    )
+        </div>
+    );
 }
 
 export default TodoListTitle;
