@@ -2,7 +2,9 @@ import './TodoListInput.css';
 
 function TodoListInput(){
   return(
-    <div>TodoList</div>
+    <div>
+      <input></input>
+    </div>
   )
 }
 
