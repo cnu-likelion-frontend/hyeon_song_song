@@ -3,7 +3,12 @@ import './TodoListInput.css';
 function TodoListInput(){
   return(
     <div>
-      <input></input>
+      <input 
+        type='checkbox'
+      />
+      <input 
+        type='text'
+      />
     </div>
   )
 }
