@@ -3,19 +3,17 @@ import TodoListInput from "./components/TodoListInput";
 import TodoListOutput from "./components/TodoListOutput";
 import TodoListItem from "./components/TodoListItem";
 import "./page.css";
+import cover from "./images/bg-desktop-light.jpg";
 
 function Page() {
   return (
     <div className="Page">
-      <TodoListTitle />
-      <TodoListInput />
-      <TodoListOutput />
-      <TodoListItem />
-      <TodoListItem />
-      <TodoListItem />
-      <TodoListItem />
-      <TodoListItem />
-      <TodoListItem />
+      <div className="Page_background"></div>
+      <div className="Page_container">
+        <TodoListTitle />
+        <TodoListInput />
+        <TodoListOutput />
+      </div>
     </div>
   );
 }

@@ -1,8 +1,18 @@
 import './TodoListOutput.css';
+import TodoListItem from "./TodoListItem";
 
 function TodoListOutput(){
   return(
-    <div>TodoList</div>
+    <div className="OutputContainer">
+        <div className="ItemContainer">
+          <TodoListItem />
+          <TodoListItem />
+          <TodoListItem />
+          <TodoListItem />
+          <TodoListItem />
+          <TodoListItem />
+        </div>
+      </div>
   )
 }
 
