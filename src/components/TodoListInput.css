@@ -11,13 +11,12 @@
 }
 
 .Input_checkbox_label {
-  
+  display: flex;
+  align-items: center;
 }
 
 .Input_checkbox {
   display: none;
-  border-radius: 100px;
-  position: relative;
 }
 
 .Input_checkbox_icon::before {
