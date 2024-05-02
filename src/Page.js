@@ -10,12 +10,16 @@ function Page() {
       <TodoListTitle />
       <TodoListInput />
       <TodoListOutput />
-      <TodoListItem />
-      <TodoListItem />
-      <TodoListItem />
-      <TodoListItem />
-      <TodoListItem />
-      <TodoListItem />
+      <div className="OutputContainer">
+        <div className="ItemContainer">
+          <TodoListItem />
+          <TodoListItem />
+          <TodoListItem />
+          <TodoListItem />
+          <TodoListItem />
+          <TodoListItem />
+        </div>
+      </div>
     </div>
   );
 }
