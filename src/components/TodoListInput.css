@@ -7,7 +7,8 @@
 }
 
 .Input_form {
-  padding: 20px;
+  padding: 18px;
+  display: flex;
 }
 
 .Input_checkbox_label {
@@ -15,29 +16,36 @@
   align-items: center;
 }
 
+/* 기존 input 디자인 초기화 */
 .Input_checkbox {
   display: none;
 }
 
+
+/* checkbox 디자인 */
 .Input_checkbox_icon::before {
   content: "";
   width: 24px;
   height: 24px;
   border: 1px solid #E3E4F1;
   position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
-.Input_checked::after {
-  background-image: url(../images/icon-check.svg);
-  position: absolute;
-}
-
-.Input_checkbox_icon::after {
-
+.Input_checkbox_label input:checked + .Input_checkbox_icon::before {
+  background: url(../images/icon-check.svg) #E3E4F1 no-repeat center;;
+  border: none;
 }
 
 .Input_text {
-  border: none;
+  margin-left: 20px;
   font-size: 18px;
+  border: none;
+}
+
+.Input_text:focus {
+  outline: none;
 }
 

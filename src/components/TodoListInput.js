@@ -11,6 +11,7 @@ function TodoListInput(){
         <input 
           type='text'
           className='Input_text'
+          placeholder='Create a new todo...'
         />
       </form>
     </div>
