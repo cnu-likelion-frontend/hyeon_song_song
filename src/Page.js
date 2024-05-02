@@ -1,6 +1,7 @@
 import TodoListTitle from "./components/TodoListTitle";
 import TodoListInput from "./components/TodoListInput";
 import TodoListOutput from "./components/TodoListOutput";
+import TodoListItem from "./components/TodoListItem";
 import "./page.css";
 import cover from "./images/bg-desktop-light.jpg";
 
