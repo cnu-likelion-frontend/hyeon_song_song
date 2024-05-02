@@ -1,6 +1,44 @@
-.TodoListInput_container {
+.Input_container {
   background-color: hsl(0, 0%, 98%);
   width: 540px;
   height: 64px;
   margin: 0 auto;
+  border-radius: 5px;
 }
+
+.Input_form {
+  padding: 20px;
+}
+
+.Input_checkbox_label {
+  
+}
+
+.Input_checkbox {
+  display: none;
+  border-radius: 100px;
+  position: relative;
+}
+
+.Input_checkbox_icon::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 1px solid #E3E4F1;
+  position: relative;
+}
+
+.Input_checked::after {
+  background-image: url(../images/icon-check.svg);
+  position: absolute;
+}
+
+.Input_checkbox_icon::after {
+
+}
+
+.Input_text {
+  border: none;
+  font-size: 18px;
+}
+
