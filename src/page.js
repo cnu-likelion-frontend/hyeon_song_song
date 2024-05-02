@@ -1,9 +1,0 @@
-import './Page.css';
-
-function Page() {
-  return (
-    <div></div>
-  );
-}
-
-export default Page;
