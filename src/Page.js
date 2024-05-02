@@ -1,12 +1,11 @@
-import TodoListTitle from './components/TodoListTitle';
-import TodoListInput from './components/TodoListInput';
-import TodoListOutput from './components/TodoListOutput';
-import './page.css';
+import TodoListTitle from "./components/TodoListTitle";
+import TodoListInput from "./components/TodoListInput";
+import TodoListOutput from "./components/TodoListOutput";
+import "./page.css";
 
 function Page() {
   return (
-    <div>
-      <div>+</div>
+    <div className="Page">
       <TodoListTitle />
       <TodoListInput />
       <TodoListOutput />
