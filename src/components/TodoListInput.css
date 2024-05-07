@@ -35,7 +35,7 @@
 }
 
 .Input_checkbox_label input:checked + .Input_checkbox_icon::before {
-  background: url(../images/icon-check.svg) #E3E4F1 no-repeat center;;
+  background: url(../images/button.png) no-repeat center;;
   border: none;
 }
 
