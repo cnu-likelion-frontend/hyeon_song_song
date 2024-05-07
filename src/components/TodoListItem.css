@@ -15,6 +15,11 @@
     margin-left: 20px;
 }
 
+.Input_completed {
+    text-decoration: line-through;
+    color: #D1D2DA;
+}
+
 .TodoItem svg {
     background: none;
     border: none;
