@@ -2,6 +2,10 @@ import './TodoListOutput.css';
 import TodoListItem from "./TodoListItem";
 
 function TodoListOutput(){
+  function allBtnClick () {
+    alert("all 버튼 클릭!");
+  }
+
   return(
     <div className="OutputContainer">
         <div className="ItemContainer">
@@ -15,11 +19,11 @@ function TodoListOutput(){
         <div className='LowerContainer'>
           <p>item left</p>
           <div className='BtnContainer'>
-          <button className='MiddleBtn'>All</button>
+          <button className='MiddleBtn' onClick={allBtnClick}>All</button>
           <button className='MiddleBtn'>Active</button>
           <button className='MiddleBtn'>Completed</button>
           </div>
-          <p>Clear Completed</p>
+          <button className='ClearBtn'>Clear Completed</button>
         </div>
     </div>
   )
