@@ -22,5 +22,13 @@
     background: none;
     margin: 0px 10px 0px 10px;
     color: gray;
+    cursor: pointer;
+}
+
+.BtnContainer button{
     font-weight: 700;
+}
+
+.LowerContainer button:hover {
+    color: black;
 }
