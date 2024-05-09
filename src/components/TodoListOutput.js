@@ -1,9 +1,12 @@
 import "./TodoListOutput.css";
 import TodoListItem from "./TodoListItem";
+import { useState } from "react";
 
 function TodoListOutput() {
-  function allBtnClick() {
-    alert("all 버튼 클릭!");
+  const [activeButton, setActiveButton] = useState("");
+
+  function handleButtonClick(buttonName) {
+    setActiveButton(buttonName);
   }
 
   return (
