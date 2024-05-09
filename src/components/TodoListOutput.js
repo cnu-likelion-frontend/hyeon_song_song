@@ -19,13 +19,12 @@ function TodoListOutput(){
         </div>
         <div className='LowerContainer'>
           <p>item left</p>
-          <div className='BtnContainer'>
-          <button  className={activeButton === 'All' ? 'button_Color' : 'MiddleBtn'}
-            onClick={() => handleButtonClick('All')}>All</button>
-          <button  className={activeButton === 'Active' ? 'button_Color' : 'MiddleBtn'}
-            onClick={() => handleButtonClick('Active')}>Active</button>
-          <button  className={activeButton === 'Completed' ? 'button_Color' : 'MiddleBtn'}
-            onClick={() => handleButtonClick('Completed')}>Completed</button>
+          <div className="BtnContainer">
+            <button className="MiddleBtn" onClick={allBtnClick}>
+              All
+            </button>
+            <button className="MiddleBtn">Active</button>
+            <button className="MiddleBtn">Completed</button>
           </div>
           <button className='ClearBtn'>Clear Completed</button>
         </div>
