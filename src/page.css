@@ -26,3 +26,10 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media only screen and (max-width: 375px) {
+  .Page_background {
+    background: url(./images/bg-mobile-light.jpg);
+    width: 375px;
+  }
+}
