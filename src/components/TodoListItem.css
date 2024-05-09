@@ -2,8 +2,8 @@
     width: 492px;
     margin: 0 auto;
     padding: 0px 18px 0px 18px;
-  }
-  
+}
+
 .TodoItem {
     display: flex;
     height: 64px;
@@ -18,6 +18,11 @@
 .Input_completed {
     text-decoration: line-through;
     color: #D1D2DA;
+}
+
+.Input_content {
+    text-decoration: none;
+    color: black;
 }
 
 .TodoItem svg {

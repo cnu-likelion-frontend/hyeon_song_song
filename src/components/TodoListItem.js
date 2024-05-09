@@ -4,6 +4,7 @@ import './TodoListItem.css';
 function TodoListItem(){
 
   const [ todo, setTodo ] = useState('할 일');
+  const [ isCompleted, setIsCompleted ] = useState(false);
   const [ todoClass, setTodoClass ] = useState('Input_content');
 
 
@@ -12,7 +13,8 @@ function TodoListItem(){
   // item left 의 개수가 늘어나야 함 
 
   const onClickCheckbox = (e) => {
-    setTodoClass('Input_completed');
+    setIsCompleted(!isCompleted);
+    setTodoClass(isCompleted ? 'Input_completed' : 'Input_content');
   };
 
     return(
@@ -22,7 +24,10 @@ function TodoListItem(){
           className='Input_checkbox_label'
           onClick={onClickCheckbox}
         >
-          <input type='checkbox' className='Input_checkbox' />
+          <input 
+            type='checkbox' 
+            className='Input_checkbox'
+          />
           <span className='Input_checkbox_icon'></span>
         </label>
         <p className={todoClass}>{ todo }</p>
