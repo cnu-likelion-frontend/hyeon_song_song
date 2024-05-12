@@ -2,7 +2,7 @@ import "./TodoListOutput.css";
 import TodoListItem from "./TodoListItem";
 import { useState } from "react";
 
-function TodoListOutput() {
+function TodoListOutput({ todo }) {
   const [activeButton, setActiveButton] = useState("");
 
   function handleButtonClick(buttonName) {
@@ -13,12 +13,11 @@ function TodoListOutput() {
     <>
       <div className="OutputContainer">
         <div className="ItemContainer">
-          <TodoListItem />
-          <TodoListItem />
-          <TodoListItem />
-          <TodoListItem />
-          <TodoListItem />
-          <TodoListItem />
+          <div>
+            {todo.map((it) => (
+              <TodoListItem {...it}/>
+            ))}
+          </div>
         </div>
         <div className="LowerContainer">
           <p>item left</p>
