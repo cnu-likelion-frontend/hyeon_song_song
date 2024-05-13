@@ -1,23 +1,25 @@
-import './TodoListOutput.css';
+import "./TodoListOutput.css";
 import TodoListItem from "./TodoListItem";
-import { useState } from 'react';
+import { useState } from "react";
 
-function TodoListOutput(){
-  const [activeButton, setActiveButton] = useState('All');
-  
-  function handleButtonClick(buttonName) { setActiveButton(buttonName);}
+function TodoListOutput({ todo }) {
+  const [activeButton, setActiveButton] = useState("");
 
-  return(
-    <div className="OutputContainer">
+  function handleButtonClick(buttonName) {
+    setActiveButton(buttonName);
+  }
+
+  return (
+    <>
+      <div className="OutputContainer">
         <div className="ItemContainer">
-          <TodoListItem />
-          <TodoListItem />
-          <TodoListItem />
-          <TodoListItem />
-          <TodoListItem />
-          <TodoListItem />
+          <div>
+            {todo.map((it) => (
+              <TodoListItem {...it}/>
+            ))}
+          </div>
         </div>
-        <div className='LowerContainer'>
+        <div className="LowerContainer">
           <p>item left</p>
           <div className="BtnContainer">
             <button
@@ -43,10 +45,14 @@ function TodoListOutput(){
               Completed
             </button>
           </div>
-          <button className='ClearBtn'>Clear Completed</button>
+          <button className="ClearBtn">Clear Completed</button>
         </div>
-    </div>
-  )
+      </div>
+      <div className="Tail">
+        <p>Drag and drop to reorder list</p>
+      </div>
+    </>
+  );
 }
 
 export default TodoListOutput;

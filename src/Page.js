@@ -25,7 +25,7 @@ function Page() {
       <div className="Page_container">
         <TodoListTitle />
         <TodoListInput onCreate={onCreate}/>
-        <TodoListOutput />
+        <TodoListOutput todo={todo}/>
       </div>
     </div>
   );
