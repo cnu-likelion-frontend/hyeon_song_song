@@ -21,7 +21,6 @@
   border: none;
   background: none;
   margin: 0px 10px 0px 10px;
-  color: #9495a5;
   cursor: pointer;
 }
 
@@ -38,4 +37,12 @@
   margin-top: 50px;
   color: #9495a5;
   font-size: 14px;
+}
+
+.button_Color {
+  color: hsl(220, 98%, 61%)
+}
+
+.BasicBtn {
+  color: #9495a5;
 }
