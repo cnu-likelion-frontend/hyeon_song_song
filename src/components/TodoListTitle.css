@@ -1,0 +1,24 @@
+.TodoListTitle {
+    width: 541px;
+    height: 48px;
+    /* 전체 가운데 정렬 */
+    margin: 0 auto;
+    /* 가로로 정렬 */
+    display: flex; 
+    /* 요소 양 끝으로 배치 */
+    justify-content: space-between;
+    /* 각 아이템 사이의 간격 지정 */
+    gap: 20px;
+    padding: 50px;
+}
+
+.TodoListTitle p {
+    color: white;
+    font-size: 41px;
+    font-weight: 700;
+}
+
+.TodoListTitle svg {
+    /* 세로 중앙 정렬 */
+    margin: auto 0;
+}

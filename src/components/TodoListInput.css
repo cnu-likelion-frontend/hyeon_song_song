@@ -1,0 +1,50 @@
+.Input_container {
+  background-color: hsl(0, 0%, 98%);
+  width: 540px;
+  height: 64px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.Input_form {
+  padding: 18px;
+  display: flex;
+}
+
+.Input_checkbox_label {
+  display: flex;
+  align-items: center;
+}
+
+/* 기존 input 디자인 초기화 */
+.Input_checkbox {
+  display: none;
+}
+
+
+/* checkbox 디자인 */
+.Input_checkbox_icon::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 1px solid #E3E4F1;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.Input_checkbox_label input:checked + .Input_checkbox_icon::before {
+  background: url(../images/button.png) no-repeat center;;
+  border: none;
+}
+
+.Input_text {
+  margin-left: 20px;
+  font-size: 18px;
+  border: none;
+}
+
+.Input_text:focus {
+  outline: none;
+}

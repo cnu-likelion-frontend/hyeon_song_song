@@ -1,0 +1,48 @@
+.OutputContainer {
+  width: 540px;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 98%);
+  margin-top: 24px;
+  border-radius: 5px;
+  box-shadow: 10px 15px 15px rgba(175, 173, 173, 0.238);
+}
+
+.LowerContainer {
+  margin: 20px;
+  display: flex;
+  width: 492px;
+  display: flex;
+  /* 요소들을 왼쪽 끝, 가운데, 오른쪽 끝에 배치 */
+  justify-content: space-between;
+  color: #9495a5;
+}
+
+.LowerContainer button {
+  border: none;
+  background: none;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
+.BtnContainer button {
+  font-weight: 700;
+}
+
+.LowerContainer button:hover {
+  color: black;
+}
+
+.Tail {
+  text-align: center;
+  margin-top: 50px;
+  color: #9495a5;
+  font-size: 14px;
+}
+
+.button_Color {
+  color: hsl(220, 98%, 61%)
+}
+
+.BasicBtn {
+  color: #9495a5;
+}

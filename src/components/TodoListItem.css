@@ -1,0 +1,43 @@
+.ItemContainer {
+    width: 492px;
+    margin: 0 auto;
+    padding: 0px 18px 0px 18px;
+}
+
+.TodoItem {
+    display: flex;
+    height: 64px;
+    /* 요소 세로 가운데 배치 */
+    align-items: center;
+}
+
+.TodoItem p {
+    margin-left: 20px;
+}
+
+.Input_completed {
+    text-decoration: line-through;
+    color: #D1D2DA;
+}
+
+.Input_content {
+    text-decoration: none;
+    color: black;
+}
+
+.TodoItem svg {
+    background: none;
+    border: none;
+    /* 요소 하나만 오른쪽 정렬 */
+    margin-left: auto;
+}
+
+hr {
+    border: 0;
+    height: 1px; /* 선의 두께 */
+    background-color: #E3E4F1; /* 선의 색상 */
+    margin: 0; /* 위아래 여백 */
+    width: 540px;
+    position: relative;
+    right: 24px;
+}
