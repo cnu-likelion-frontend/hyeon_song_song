@@ -1,0 +1,20 @@
+.TodoList .TodoList_search {
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.TodoList .TodoList_search:focus {
+  outline: none;
+  border-bottom: 1px solid #1f93ff;
+}
+
+.TodoList_list_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
