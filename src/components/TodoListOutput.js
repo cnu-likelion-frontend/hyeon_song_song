@@ -3,10 +3,21 @@ import TodoListItem from "./TodoListItem";
 import { useState } from "react";
 
 function TodoListOutput({ todo }) {
-  const [activeButton, setActiveButton] = useState("");
+
+  const [activeButton, setActiveButton] = useState("All");
 
   function handleButtonClick(buttonName) {
     setActiveButton(buttonName);
+  }
+
+  // 필터링된 할 일 목록을 반환하는 함수
+  function getFilteredTodos() {
+    if (activeButton === "Active") {
+      return todo.filter((item) => !item.isDone); // 완료되지 않은 할 일만 보이도록 필터링
+    } else if (activeButton === "Completed") {
+      return todo.filter((item) => item.isDone); // 완료된 할 일만 보이도록 필터링
+    }
+    return todo; // 모든 할 일 보이기
   }
 
   return (
@@ -14,8 +25,8 @@ function TodoListOutput({ todo }) {
       <div className="OutputContainer">
         <div className="ItemContainer">
           <div>
-            {todo.map((it) => (
-              <TodoListItem {...it}/>
+          {getFilteredTodos().map((it) => (
+              <TodoListItem key={it.id} {...it} />
             ))}
           </div>
         </div>
